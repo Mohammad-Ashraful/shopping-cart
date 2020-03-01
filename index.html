@@ -230,7 +230,12 @@
                caseItem.style.display = "none";
             })
 
-         const checkPage = document.getElementById("checkBtn");
+         
+
+      // Code for Case Ends Here
+
+            // Collapse Cart Page and Move to Checkout Page
+      const checkPage = document.getElementById("checkBtn");
          checkPage.addEventListener("click", function(){
             const cartClose = document.getElementById("cartPage");
             cartClose.style.display = "none";
@@ -238,7 +243,7 @@
             const checkOpen = document.getElementById("checkPage");
             checkOpen.style.display = "block";
          })
-
+            // Collapse Checkout Page and Back to Cart Page
          const back = document.getElementById("back");
          back.addEventListener("click", function(){
             const checkOpen = document.getElementById("checkPage");
@@ -247,8 +252,6 @@
             const cartClose = document.getElementById("cartPage");
             cartClose.style.display = "block";
          })
-
-      // Code for Case Ends here
 
       // Functions for common use
       function textToNumber(id){
